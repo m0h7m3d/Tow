@@ -1,0 +1,135 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+.portfoilio{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.portfoilio .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(259px, 1fr));
+  grid-gap: 40px;
+}
+.portfoilio .box{
+  background-color: #cbcbcb4a;
+}
+.portfoilio .box .img{
+  position: relative;
+}
+.portfoilio .box img{
+  width: 100%;
+}
+.overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: linear-gradient(45deg,#0089ff,#06467c);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img:hover .overlay {
+  opacity: .8;
+}
+.overlay .button a{
+  text-align: center;
+  text-decoration: none;
+  transform: translate(50%, 50%);
+  font-size: 19px;
+  font-weight: 800;
+  background-color: #9f9c98bd;
+  right: 50%;
+  position: absolute;
+  top: 40%;
+  padding: 10px;
+  border-radius: 9px;
+  color: white;
+}
+.portfoilio .box .text{
+  padding: 20px;
+  padding-bottom: 0;
+}
+.portfoilio .box .text h2{
+  font-size: 23px;
+  font-weight: 800;
+}
+.portfoilio .box .text p{
+  color: #777;
+  font-weight: 400;
+  font-size: 16px;
+}
+.portfoilio .box .tow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 29px;
+  padding-left: 29px;
+}
+.portfoilio .box .tow h3{
+  font-size: 16px;
+}
+.portfoilio .box .icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px;
+}
+.portfoilio .box .icon i{
+  font-size: 25px;
+}
+.portfoilio .box .icon p{
+  margin-left: 54px;
+  margin-top: -23px;
+}
+.portfoilio .three p{
+  padding: 23px;
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 13px;
+  color: #777;
+  margin-top: -19px;
+}
+.portfoilio .box .three h2{
+  font-size: 23px;
+  padding: 23px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: -6px;
+  color: #0089ff;
+}
